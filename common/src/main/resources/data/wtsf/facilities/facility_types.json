@@ -1,0 +1,6 @@
+{
+  "ticket_machine": {"display_name": "Ticket Machine", "category": "ticketing"},
+  "platform_display": {"display_name": "Platform Display", "category": "information"},
+  "station_signage": {"display_name": "Station Signage", "category": "signage"},
+  "fare_gate": {"display_name": "Fare Gate", "category": "access_control"}
+}
