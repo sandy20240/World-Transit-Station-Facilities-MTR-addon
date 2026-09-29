@@ -1,0 +1,6 @@
+{
+  "id": "tokyo_metro",
+  "display_name": "Tokyo Metro",
+  "country": "japan",
+  "facilities": ["ticket_machine", "platform_display", "station_signage", "fare_gate"]
+}
