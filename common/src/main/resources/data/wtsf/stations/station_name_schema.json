@@ -1,0 +1,9 @@
+{
+  "id": "station_name",
+  "type": "station_name",
+  "description": "WTSF station-name data is resolved from MTR station data at runtime.",
+  "mtr": {
+    "integration": true,
+    "requires_mtr": true
+  }
+}
