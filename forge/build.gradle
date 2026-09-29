@@ -1,5 +1,6 @@
 plugins {
     id 'dev.architectury.loom'
+    id 'com.github.johnrengelman.shadow'
 }
 
 architectury {
@@ -11,14 +12,35 @@ loom {
     silentMojangMappingsLicense()
 }
 
+configurations {
+    common
+    shadowCommon
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+}
+
 dependencies {
-    forge "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    modImplementation "dev.architectury:architectury-forge:${architectury_version}"
-    modImplementation "maven.modrinth:mtr:${mtr_version}"
-    implementation project(':common')
+    forge "net.minecraftforge:forge:\${minecraft_version}-\${forge_version}"
+    modApi "dev.architectury:architectury-forge:\${architectury_version}"
+
+    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    shadowCommon(project(path: ':common', configuration: 'transformProductionForge')) { transitive false }
 }
 
 processResources {
     inputs.property 'version', project.version
     filesMatching('META-INF/mods.toml') { expand version: project.version }
+}
+
+shadowJar {
+    exclude 'fabric.mod.json'
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+    archiveClassifier = null
 }
