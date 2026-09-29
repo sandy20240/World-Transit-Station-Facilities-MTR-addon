@@ -1,0 +1,15 @@
+{
+  "id": "pids_default",
+  "type": "pids",
+  "display_name": "Passenger Information Display",
+  "mtr": {
+    "integration": true,
+    "requires_mtr": true
+  },
+  "display": {
+    "show_station_name": true,
+    "show_route_name": true,
+    "show_destination": true,
+    "show_departure_time": true
+  }
+}
