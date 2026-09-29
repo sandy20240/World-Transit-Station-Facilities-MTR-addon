@@ -1,0 +1,4 @@
+pluginManagement { repositories { gradlePluginPortal(); maven { url = 'https://maven.architectury.dev/' }; maven { url = 'https://maven.fabricmc.net/' } } }
+dependencyResolutionManagement { repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS); repositories { mavenCentral(); maven { url = 'https://maven.architectury.dev/' }; maven { url = 'https://maven.fabricmc.net/' }; maven { url = 'https://maven.minecraftforge.net/' } } }
+rootProject.name = 'World-Transit-Station-Facilities'
+include 'common', 'fabric', 'forge'
