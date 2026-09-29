@@ -1,0 +1,6 @@
+{
+  "id": "smrt",
+  "display_name": "SMRT",
+  "country": "singapore",
+  "facilities": ["ticket_machine", "platform_display", "station_signage", "fare_gate"]
+}
