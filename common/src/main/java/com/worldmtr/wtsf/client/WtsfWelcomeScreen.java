@@ -50,17 +50,19 @@ public final class WtsfWelcomeScreen extends Screen {
         this.renderBackground(graphics);
         int centerX = this.width / 2;
         graphics.drawCenteredString(this.font, "WORLD TRANSIT STATION FACILITIES",
-                centerX, this.height / 2 - 90, 0xFFFFFF);
+                centerX, this.height / 2 - 105, 0xFFFFFF);
         graphics.drawCenteredString(this.font, "WTSF",
-                centerX, this.height / 2 - 65, 0x55DDE0);
+                centerX, this.height / 2 - 80, 0x55DDE0);
         graphics.drawCenteredString(this.font, "189 HOURS OF DEVELOPMENT",
-                centerX, this.height / 2 - 35, 0xFFFFFF);
+                centerX, this.height / 2 - 50, 0xFFFFFF);
+        graphics.drawCenteredString(this.font, "Thank you for installing WTSF!",
+                centerX, this.height / 2 - 20, 0xFFFFFF);
         graphics.drawCenteredString(this.font, "Hope you enjoy this mod!",
-                centerX, this.height / 2 - 5, 0xD0D0D0);
+                centerX, this.height / 2 + 5, 0xD0D0D0);
         graphics.drawCenteredString(this.font, "Admins",
-                centerX, this.height / 2 + 28, 0x55DDE0);
+                centerX, this.height / 2 + 38, 0x55DDE0);
         graphics.drawCenteredString(this.font, "Sandy · Curt · Renikh · Mathew · Waterberry",
-                centerX, this.height / 2 + 48, 0xFFFFFF);
+                centerX, this.height / 2 + 58, 0xFFFFFF);
         super.render(graphics, mouseX, mouseY, delta);
     }
 
