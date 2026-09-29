@@ -1,0 +1,10 @@
+{
+  "id": "wtm_poland",
+  "type": "ticket_machine",
+  "country": "poland",
+  "display_name": "Warsaw Ticket Machine",
+  "mtr": {
+    "integration": true,
+    "requires_mtr": true
+  }
+}
