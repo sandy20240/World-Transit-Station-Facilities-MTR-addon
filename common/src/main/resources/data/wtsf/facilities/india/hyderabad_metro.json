@@ -1,0 +1,6 @@
+{
+  "id": "hyderabad_metro",
+  "display_name": "Hyderabad Metro",
+  "country": "india",
+  "facilities": ["ticket_machine", "platform_display", "station_signage", "fare_gate"]
+}
