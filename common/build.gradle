@@ -3,6 +3,6 @@ architectury {
 }
 
 dependencies {
-    modImplementation "dev.architectury:architectury:${architectury_version}"
-    modImplementation "maven.modrinth:mtr:${mtr_version}"
+    modApi "dev.architectury:architectury:\${architectury_version}"
+    implementation files("../checkouts/mtr-common.jar")
 }
