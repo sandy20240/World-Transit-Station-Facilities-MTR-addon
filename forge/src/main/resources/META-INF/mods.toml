@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="wtsf"
+version="${version}"
+displayName="World Transit Station Facilities"
+authors="Sandy"
+description='''World Transit Station Facilities - an MTR addon.'''
+
+[[dependencies.wtsf]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wtsf]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wtsf]]
+modId="architectury"
+mandatory=true
+versionRange="[9.2,)"
+ordering="AFTER"
+side="BOTH"
