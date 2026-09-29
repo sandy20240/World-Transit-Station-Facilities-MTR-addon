@@ -12,18 +12,15 @@ public final class CountryRegistry {
     }
 
     public static void bootstrap() {
-        if (!COUNTRIES.isEmpty()) {
-            return;
-        }
+        if (!COUNTRIES.isEmpty()) return;
 
-        // Initial country list. More countries can be added without changing
-        // the inventory/category architecture.
         register("india", "India");
         register("japan", "Japan");
         register("china", "China");
         register("hong_kong", "Hong Kong");
         register("singapore", "Singapore");
         register("south_korea", "South Korea");
+        register("poland", "Poland");
         register("united_kingdom", "United Kingdom");
         register("united_states", "United States");
     }
@@ -37,9 +34,7 @@ public final class CountryRegistry {
         return country;
     }
 
-    public static Country get(String id) {
-        return COUNTRIES.get(id);
-    }
+    public static Country get(String id) { return COUNTRIES.get(id); }
 
     public static Collection<Country> all() {
         return Collections.unmodifiableCollection(COUNTRIES.values());
