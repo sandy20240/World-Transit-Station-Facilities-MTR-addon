@@ -1,28 +1,21 @@
 package com.worldmtr.wtsf;
 
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
+import org.mtr.mapping.holder.Block;
+import org.mtr.mapping.holder.Identifier;
+import org.mtr.mapping.registry.BlockRegistryObject;
+import org.mtr.mod.Blocks;
+import org.mtr.mod.CreativeModeTabs;
+import org.mtr.mod.Init;
 
 public final class WtsfBlocks {
-    public static final FacilityBlock WTM_POLAND = register(
-            "wtm_poland",
-            new FacilityBlock(
-                    "Warsaw Ticket Machine",
-                    net.minecraft.world.level.block.state.BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                            .strength(3.0F)
-            )
+    public static final BlockRegistryObject WTM_POLAND = Init.REGISTRY.registerBlockWithBlockItem(
+            new Identifier(Wtsf.MOD_ID, "wtm_poland"),
+            () -> new Block(new WtsfTicketMachine(
+                    Blocks.createDefaultBlockSettings(true, blockState -> 5)
+            )),
+            CreativeModeTabs.RAILWAY_FACILITIES
     );
 
     private WtsfBlocks() {
-    }
-
-    private static FacilityBlock register(String id, FacilityBlock block) {
-        return Registry.register(
-                BuiltInRegistries.BLOCK,
-                new ResourceLocation(Wtsf.MOD_ID, id),
-                block
-        );
     }
 }
