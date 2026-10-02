@@ -10,6 +10,7 @@ public final class Wtsf {
     public static void init() {
         CountryRegistry.bootstrap();
         WtsfFacilities.WTM_POLAND.toString();
+        WtsfBlocks.WTM_VR.toString();
         WtsfBlocks.WTM_POLAND.toString();
         WtsfItems.register();
     }
