@@ -1,7 +1,12 @@
 {
   "variants": {
-    "": {
-      "model": "wtsf:block/wtm_poland"
-    }
+    "facing=north,half=lower": { "model": "wtsf:block/wtm_poland_lower" },
+    "facing=south,half=lower": { "model": "wtsf:block/wtm_poland_lower", "y": 180 },
+    "facing=west,half=lower": { "model": "wtsf:block/wtm_poland_lower", "y": 270 },
+    "facing=east,half=lower": { "model": "wtsf:block/wtm_poland_lower", "y": 90 },
+    "facing=north,half=upper": { "model": "wtsf:block/wtm_poland_upper" },
+    "facing=south,half=upper": { "model": "wtsf:block/wtm_poland_upper", "y": 180 },
+    "facing=west,half=upper": { "model": "wtsf:block/wtm_poland_upper", "y": 270 },
+    "facing=east,half=upper": { "model": "wtsf:block/wtm_poland_upper", "y": 90 }
   }
 }
