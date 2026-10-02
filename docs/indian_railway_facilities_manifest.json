@@ -1,0 +1,29 @@
+{
+  "package": "WTSF Indian Railway Facilities",
+  "target_repo": "sandy20240/World-Transit-Station-Facilities-MTR-addon",
+  "loader": "Fabric",
+  "minecraft_version": "1.20.1",
+  "mtr_version": "4.0.5",
+  "fabric_loader_version": "0.15.11",
+  "fabric_api_version": "0.92.2+1.20.1",
+  "architectury_version": "9.2.14",
+  "java": "17",
+  "style": ["modern", "classic"],
+  "facilities": [
+    "ir_station_sign",
+    "ir_platform_sign",
+    "ir_ticket_counter",
+    "ir_ticket_machine",
+    "ir_reservation_counter",
+    "ir_platform_bench",
+    "ir_station_clock",
+    "ir_water_point",
+    "ir_dustbin",
+    "ir_chai_stall",
+    "ir_food_stall",
+    "ir_toilet"
+  ],
+  "resource_namespace": "wtsf",
+  "registration_required": true,
+  "notes": "Resource/model layer prepared for integration with the existing WTSF MTR addon."
+}
